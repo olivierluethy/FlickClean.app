@@ -1,4 +1,18 @@
-# FlickClean
+<div align="center">
+  <img src="public/icon512x512.jpg" alt="FlickClean logo" width="140" />
+  <h1>FlickClean</h1>
+  <p><b>Swipe your photo gallery clean and free up storage in minutes.</b><br/>The Next.js marketing site for FlickClean — hero, feature sections, blog and legal pages (not the mobile app itself).</p>
+  <p>
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+    <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs">
+    <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black">
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss&logoColor=white">
+    <img alt="Framer Motion" src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white">
+  </p>
+</div>
+
+---
 
 Marketing website for **FlickClean** — a phone gallery cleanup app that lets you
 swipe through your photos and free up storage in minutes instead of hours. This
@@ -57,3 +71,12 @@ components/     # landing sections, analytics, and UI components
 lib/            # analytics helpers and utilities
 public/         # static assets
 ```
+
+## License
+
+Released under the [MIT License](LICENSE) © 2026 Olivier Lüthy. You're free to use, modify and distribute this
+software, including commercially, as long as the copyright notice and license are included.
+
+## Author
+
+Built by **Olivier Lüthy** — [GitHub](https://github.com/olivierluethy).
