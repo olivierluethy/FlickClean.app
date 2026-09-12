@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FlickClean
+
+Marketing website for **FlickClean** — a phone gallery cleanup app that lets you
+swipe through your photos and free up storage in minutes instead of hours. This
+repo is the Next.js landing site (hero, feature sections, blog, and legal pages),
+not the mobile app itself.
+
+## Features
+
+- Landing page composed of modular sections (hero, impact, problems, solution,
+  feature visual, trust, why-FlickClean, call-to-action, blog preview)
+- Blog with individual post pages (`/blog/[slug]`)
+- Static support, contact, privacy, and terms pages
+- SEO metadata, Open Graph / Twitter cards, `robots.ts` and `sitemap.ts`
+- Google Analytics and Vercel Analytics with custom scroll-depth and session
+  tracking
+- Animations via Framer Motion; UI built with Radix / shadcn primitives
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router) + React 19
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4, `tailwind-merge`, `class-variance-authority`
+- **UI:** Radix UI / shadcn, lucide-react icons, Framer Motion
+- **Analytics:** Google Analytics (`@next/third-parties`), Vercel Analytics
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# install dependencies (pnpm, npm, or yarn)
+pnpm install
+
+# run the dev server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Optional environment variables:
 
-## Learn More
+- `NEXT_PUBLIC_SITE_URL` — canonical site URL (defaults to `https://flickclean.app`)
+- `NEXT_PUBLIC_GA_ID` — Google Analytics measurement ID
 
-To learn more about Next.js, take a look at the following resources:
+## Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build && pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/            # App Router pages (landing, blog, contact, privacy, terms, support)
+components/     # landing sections, analytics, and UI components
+lib/            # analytics helpers and utilities
+public/         # static assets
+```
